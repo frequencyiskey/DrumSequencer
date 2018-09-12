@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".SequencerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="33dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kick"
+                android:textSize="16sp"
+                android:textColor="@color/colorHighlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Snare"
+                android:textSize="16sp"
+                android:textColor="@color/colorHighlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hi-Hat"
+                android:textSize="16sp"
+                android:textColor="@color/colorHighlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="High Tom"
+                android:textSize="16sp"
+                android:textColor="@color/colorHighlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mid Tom"
+                android:textSize="16sp"
+                android:textColor="@color/colorHighlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Low Tom"
+                android:textSize="16sp"
+                android:textColor="@color/colorHighlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Crash"
+                android:textSize="16sp"
+                android:textColor="@color/colorHighlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clap"
+                android:textSize="16sp"
+                android:textColor="@color/colorHighlight"/>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:columnCount="16"
+            android:rowCount="8">
+
+            <!-- Kick - start -->
+            <ToggleButton
+                android:id="@+id/kickToggle1"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle2"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle3"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle4"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle5"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle6"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle7"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle8"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle9"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle10"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle11"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle12"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle13"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle14"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle15"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/kickToggle16"
+                android:tag="kick"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+            <!-- Kick - end -->
+
+            <!-- Snare - start -->
+            <ToggleButton
+                android:id="@+id/snareToggle1"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle2"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle3"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle4"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle5"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle6"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle7"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle8"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle9"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle10"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle11"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle12"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle13"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle14"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle15"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/snareToggle16"
+                android:tag="snare"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+            <!-- snare - end -->
+
+
+            <!-- hihat - start -->
+            <ToggleButton
+                android:id="@+id/hihatToggle1"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle2"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle3"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle4"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle5"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle6"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle7"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle8"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle9"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle10"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle11"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle12"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle13"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle14"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle15"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/hihatToggle16"
+                android:tag="hihat"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+            <!-- hihat bars - end -->
+
+            <!-- High Tom - start -->
+            <ToggleButton
+                android:id="@+id/highTomToggle1"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle2"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle3"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle4"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle5"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle6"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle7"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle8"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle9"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle10"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle11"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle12"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle13"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle14"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle15"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/highTomToggle16"
+                android:tag="highTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+            <!-- High Tom - end -->
+
+            <!-- Mid Tom - start -->
+            <ToggleButton
+                android:id="@+id/midTomToggle1"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle2"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle3"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle4"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle5"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle6"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle7"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle8"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle9"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle10"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle11"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle12"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle13"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle14"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle15"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/midTomToggle16"
+                android:tag="midTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+            <!-- Mid Tom - end -->
+
+            <!-- Low Tom - start -->
+            <ToggleButton
+                android:id="@+id/lowTomToggle1"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle2"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle3"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle4"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle5"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle6"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle7"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle8"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle9"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle10"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle11"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle12"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle13"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle14"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle15"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/lowTomToggle16"
+                android:tag="lowTom"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+            <!-- Low Tom - end -->
+
+            <!-- Crash - start -->
+            <ToggleButton
+                android:id="@+id/crashToggle1"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle2"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle3"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle4"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle5"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle6"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle7"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle8"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle9"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle10"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle11"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle12"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle13"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle14"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle15"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/crashToggle16"
+                android:tag="crash"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+            <!-- Crash - end -->
+
+            <!-- Clap - start -->
+            <ToggleButton
+                android:id="@+id/clapToggle1"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle2"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle3"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle4"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle5"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle6"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle7"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle8"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle9"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle10"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle11"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle12"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle13"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle14"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle15"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/clapToggle16"
+                android:tag="clap"
+                android:onClick="onSeqClick"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:textOff=""
+                android:textOn="" />
+            <!-- Clap - end -->
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

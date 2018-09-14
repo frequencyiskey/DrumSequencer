@@ -4,11 +4,14 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
 
 public class SequencerActivity extends AppCompatActivity {
 
     public MediaPlayer kickWav, snareWav, hihatWav, highTomWav,
             midTomWav, lowTomWav, crashWav, clapWav;
+
+    private int tempo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,17 @@ public class SequencerActivity extends AppCompatActivity {
         lowTomWav = MediaPlayer.create(this, R.raw.low_tom);
         crashWav = MediaPlayer.create(this, R.raw.crash);
         clapWav = MediaPlayer.create(this, R.raw.clap);
+
+        setTempo();
+    }
+
+    public int getTempo() {
+        return tempo;
+    }
+
+    public void setTempo() {
+        EditText edit = (EditText) findViewById(R.id.tempo);
+        tempo = Integer.parseInt(edit.getText().toString());
     }
 
     public void onSeqClick(View view) {

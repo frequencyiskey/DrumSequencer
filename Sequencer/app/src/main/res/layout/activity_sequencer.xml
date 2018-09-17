@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:gravity="top"
     android:orientation="vertical"
-    android:weightSum="10"
     tools:context=".SequencerActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="5dp">
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_constraintTop_toTopOf="Parent"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.15"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
             android:gravity="center"
             android:text="Tempo:"
             android:textColor="@color/colorHighlight"
@@ -50,11 +56,11 @@
             android:id="@+id/playPauseToggle"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="5dp"
-            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:background="@drawable/custom_button"
             android:textColor="@color/colorHighlight"
             android:textOff="Play"
@@ -72,24 +78,28 @@
 
     </LinearLayout>
 
-    <RelativeLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_height="444dp"
+        android:layout_constraintBottom_toBottomOf="Parent"
+        android:layout_weight="0.85"
+        tools:layout_editor_absoluteY="108dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="70dp"
+            android:layout_height="418dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="12dp"
             android:gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="34dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Kick"
                 android:textColor="@color/colorHighlight"
                 android:textSize="16sp" />
@@ -98,6 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Snare"
                 android:textColor="@color/colorHighlight"
                 android:textSize="16sp" />
@@ -106,6 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Hi-Hat"
                 android:textColor="@color/colorHighlight"
                 android:textSize="16sp" />
@@ -114,6 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="High Tom"
                 android:textColor="@color/colorHighlight"
                 android:textSize="16sp" />
@@ -122,6 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Mid Tom"
                 android:textColor="@color/colorHighlight"
                 android:textSize="16sp" />
@@ -130,6 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Low Tom"
                 android:textColor="@color/colorHighlight"
                 android:textSize="16sp" />
@@ -138,6 +153,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Crash"
                 android:textColor="@color/colorHighlight"
                 android:textSize="16sp" />
@@ -146,6 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Clap"
                 android:textColor="@color/colorHighlight"
                 android:textSize="16sp" />
@@ -156,9 +173,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
+            android:layout_constraintBottom_toBottomOf="Parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
             android:columnCount="16"
-            android:rowCount="8">
+            android:rowCount="8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <!-- Kick - start -->
             <ToggleButton
@@ -1843,6 +1865,6 @@
 
         </GridLayout>
 
-    </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
